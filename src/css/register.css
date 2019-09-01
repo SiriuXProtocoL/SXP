@@ -1,0 +1,30 @@
+.text{
+	color:black;
+}
+.field{
+	border-radius: 10px;
+    padding: 10px; 
+	width: 200px; 
+}
+.img_111
+{
+	height: 100%;
+}
+.btn{
+	color:aliceblue;
+	border-radius: 10px;
+	padding: 10px; 
+	width: 200px; 
+	margin-left: 10px;
+	background-color: #292C68;
+}
+.btn:hover{
+	background-color: #25274D;
+}
+.centered {
+	color: black;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}

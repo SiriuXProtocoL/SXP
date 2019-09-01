@@ -1,3 +1,19 @@
+<?php
+session_start();
+if(isset($_SESSION['username']))
+{
+    $_SESSION['msg'] = "You Must Log In First to View this page";
+    header("location: login.php");
+
+if(isset($_GET['logout']))
+{
+    session_destroy();
+    unset($_SESSION['username']);
+    header("location: login.php");
+}
+}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -82,20 +98,23 @@
                    <div class="mask rgba-black-strong">
                       <div class="container-fluid  justify-content-center h-100 col-md-10">
                           <div class="row d-flex justify-content-center text-center ">
-        
+        <?php if(isset($_SESSION['success'])) : ?>
                 <div class=" mt-5 col-md-12 white-text font-weight-bold">
                     <h1 class="text-center mt-5">
                       Welcome!
-                     
+                      <?php
+                      echo $_SESSION['success'];
+                      unset($_SESSION['success']);
+                      ?>
                     </h1>
                   </div>
-                  
+                  <?php endif ?>
                   <div class="col-md-10">
-                     
+                      <?php if(isset($_SESSION['username'])) ?>
                       <div>
                       <h2 class="white-text font-weight-bold mt-5">
                           Hello
-                       
+                        <?php echo $_SESSION['username']; ?>
                       </h2>
                     </div>
                   <div>
@@ -117,7 +136,7 @@
                       <a class="btn btn-success" href="faculty.html"> Take Attendence </a>
                       <a class="btn btn-info" href="student_attendence.html"> View Attendence </a>
 
-                   
+                      <?php endif ?>
                </div>
                </div>
                </div>

@@ -1,0 +1,25 @@
+[debug] [2019-03-02T08:15:33.916Z] ----------------------------------------------------------------------
+[debug] [2019-03-02T08:15:33.932Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\bebin\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js serve
+[debug] [2019-03-02T08:15:33.932Z] CLI Version:   6.4.0
+[debug] [2019-03-02T08:15:33.932Z] Platform:      win32
+[debug] [2019-03-02T08:15:33.932Z] Node Version:  v10.15.0
+[debug] [2019-03-02T08:15:33.932Z] Time:          Sat Mar 02 2019 13:45:33 GMT+0530 (India Standard Time)
+[debug] [2019-03-02T08:15:33.932Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2019-03-02T08:15:34.097Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2019-03-02T08:15:34.113Z] > authorizing via signed-in user
+[debug] [2019-03-02T08:15:34.113Z] [iam] checking project siriusxp-1d049 for permissions ["firebase.projects.get"]
+[debug] [2019-03-02T08:15:34.113Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/siriusxp-1d049:testIamPermissions  
+
+[debug] [2019-03-02T08:15:35.812Z] <<< HTTP RESPONSE 200
+[debug] [2019-03-02T08:15:35.824Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/siriusxp-1d049  
+ 
+[debug] [2019-03-02T08:15:37.297Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Serving from 'C:\blockchain'...
+[info] 
+[debug] [2019-03-02T08:15:37.297Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/640101814778/clients/_:getWebAppConfig  
+ 
+[debug] [2019-03-02T08:15:37.881Z] <<< HTTP RESPONSE 200
+[info] i  hosting: Serving hosting files from: home.html
+[info] +  hosting: Local server: http://localhost:5000

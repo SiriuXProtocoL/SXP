@@ -1,0 +1,21 @@
+{
+  "name": "sxp-eth",
+  "version": "1.0.0",
+  "description": "sxp for online sale",
+  "main": "truffle-config.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "dev": "lite-server"
+  },
+  "author": "SiriuXProtocoL",
+  "license": "ISC",
+  " devDependencies": {
+    "lite-server": "2.4.0"
+  },
+  "dependencies": {
+    "web3": "^1.0.0-beta.46",
+    "web3-utils": "^1.0.0-beta.46"
+  }
+}
